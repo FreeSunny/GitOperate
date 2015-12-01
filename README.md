@@ -3,11 +3,11 @@
 
 1: git 安装与配置
 
-Linux: shell 界面输入， sudo  apt-get install git-core 回车输入密码
+    Linux: shell 界面输入， sudo  apt-get install git-core 回车输入密码
 
-Windows：下载安装包 https://github.com/git-for-windows/git/releases/tag/v2.6.3.windows.1 下载对应的exe安装包，双击安装
+    Windows：下载安装包 https://github.com/git-for-windows/git/releases/tag/v2.6.3.windows.1 下载对应的exe安装包，双击安装
 
-Mac：terminal : brew install git
+    Mac：terminal : brew install git
 
 配置全局用户名和邮箱，Linux: shell ，Windows: Git Bash ，Mac:terminal 命令如下：
 
