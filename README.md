@@ -13,7 +13,6 @@ Mac：terminal : brew install git
 
    git config --global user.name “wakaka" /user.email "wakaka@gmail.com”
 
-   git config --global 
 查看是否配置成功：
    git config --global user.name / user.email
 
