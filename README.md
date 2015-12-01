@@ -11,10 +11,10 @@ Mac：terminal : brew install git
 
 配置全局用户名和邮箱，Linux: shell ，Windows: Git Bash ，Mac:terminal 命令如下：
 
-   git config --global user.name “wakaka" /user.email "wakaka@gmail.com”
-
+     git config --global user.name “wakaka" /user.email "wakaka@gmail.com”
+ 
 查看是否配置成功：
-   git config --global user.name / user.email
+     git config --global user.name / user.email
 
 2:创建代码仓库（Repository）
 仓库是用于保存版本管理所需信息的地方,所有本地提交的代码都会被提交到仓库中，也可以推送到远程仓库中。比如本地有一个Demo项目，cd进入Demo目录。输入git init，目录下会生成隐藏的.git文件夹，如果要删除仓库，删除该文件夹。
@@ -65,17 +65,17 @@ log：查看提交记录（内容包含提交id,提交人，提交日期，描�
 
    分支命令：
 
-   git branch -a // 查看所有分支，master主干，分支前有*号，表示当前处于那个分支
+       git branch -a // 查看所有分支，master主干，分支前有*号，表示当前处于那个分支
 
-   git branch release1.0 // 创建release1.0分支，
+       git branch release1.0 // 创建release1.0分支，
 
-   git checkout release1.0 // 切换到release1.0分支，主要与文件修改撤销的区别
+       git checkout release1.0 // 切换到release1.0分支，主要与文件修改撤销的区别
 
-   git checkout master // 1： 切换到主干
+       git checkout master // 1： 切换到主干
 
-   git merge release1.0 // 2： 将release1.0的修改合并到master，如果有冲突解决冲突
+       git merge release1.0 // 2： 将release1.0的修改合并到master，如果有冲突解决冲突
 
-   git branch -D release1.0 // 删除release1.0分支
+       git branch -D release1.0 // 删除release1.0分支
 
 5：远程版本库
    比如有远程版本库，https://github.com/FreeSunny/RefreashTabView.git。
