@@ -111,16 +111,23 @@ log：查看提交记录（内容包含提交id,提交人，提交日期，描�
 1：创建远程库
 
    a. 点击+号下的New repository 创建一个远程库，命名为GitOperate,
+
    b. 版本库类型可以public或者private，程序员都有开源的心，那就public。
+
    c. 还可以勾选Initialize this repository with a README，
+
    d. 接下来可以选择添加.gitignore文件，.gitignore文件有很多类型可以选，比如 Android，Android项目下的bin这些文件一般都不需   要提交。 
 选择遵循的协议。eg：Apache License 2.0, 这个可以自己去查查每种的意思
+
   点击create后，版本库就创建完成了，版本库的地址为https://github.com/FreeSunny/GitOperate.git。之后跳转到README.md,该文件主要是对项目的描述。
 
 2：远程库克隆到本地
    a. 本地创建一个GitOperate文件夹
+
    b. 远程库地址为https://github.com/FreeSunny/GitOperate.git，cd进入GitOperate，输入 git clone https://github.com/FreeSunny/GitOperate.git
+
    c. 完成后可以在GitOperater文件下的GitOperate文件夹下看到README.md文件（两层文件夹了）
+   
    d. 将第二个目录下的所有文件全部复制到上一层目录中，这样就只有第一层目录添加到版本控制中。(cp -r GitOperate/ .)
 3：提交代码
 
