@@ -80,7 +80,7 @@ log：查看提交记录（内容包含提交id,提交人，提交日期，描�
 5：远程版本库
    比如有远程版本库，https://github.com/FreeSunny/RefreashTabView.git。
 
-   git clone https://github.com/FreeSunny/RefreashTabView.git // 下载到本地
+       git clone https://github.com/FreeSunny/RefreashTabView.git // 下载到本地
 
    远程库命令：
 
