@@ -162,8 +162,14 @@
 ### 本地已经有文件夹
     
     cd existing_folder //进入已有文件夹
+    
     git init // 初始化
+    
     git remote add origin  https://github.com/FreeSunny/GitOperate.git //关联远程库
+    
     git add .
+    
     git commit -m "Initial commit"
+    
     git push -u origin master
+    
