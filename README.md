@@ -3,7 +3,7 @@
 
 工欲善其事，必先利其器，git是一个开源的分布式版本控制工具,很多文章都写的太长，或者资料太多，难以一时间看完。在此总结了git的一些使用方式，因此该文不是鸿篇巨著，但是如果看完也应该可以上手操作了。
 
-##git 安装与配置
+## git 安装与配置
 
 > 安装
 
@@ -22,11 +22,11 @@
 
     git config --global user.name / user.email
 
-##创建代码仓库（Repository）
+## 创建代码仓库（Repository）
 
 仓库是用于保存版本管理所需信息的地方,所有本地提交的代码都会被提交到仓库中，也可以推送到远程仓库中。比如本地有一个Demo项目，cd进入Demo目录。**输入git init，目录下会生成隐藏的.git文件夹**，如果要删除仓库，删除该文件夹。
 
-##git命令
+## git命令
 
 > add：把要提交的代码添加进来，可以认为到一个缓冲中**[重要]**
 
@@ -70,7 +70,7 @@
 
     git log xxxxx(id) -1 -p // 查看当前id提交记录的修改
 
-##git 分支
+## git 分支
 
 分支：可以在现有代码上拉出一个分支，使得代码可以在主干与分支同时开发，并且代码之间互相不会影响。常见使用环境，就是每次版本发布，
 已发布的可以拉出一个分支，剩下的功能继续在主干开发，如果发布版本有问题，只用修改分支，最终将代码合并到主干。
@@ -89,13 +89,13 @@
 
     git branch -D release1.0 // 删除release1.0分支
 
-##远程版本库
+## 远程版本库
 
 > 比如有远程版本库，[https://github.com/FreeSunny/RefreashTabView.git](https://github.com/FreeSunny/RefreashTabView.git)
 
     git clone https://github.com/FreeSunny/RefreashTabView.git // 下载到本地
 
-###远程库命令：
+### 远程库命令：
 
 > push：将代码修改和提交同步到远程库**[重要]**
 
@@ -117,11 +117,11 @@
 
     git pull origin master // 没有斜线
 
-##实例操作[gitbub网址](https://github.com/)
+## 实例操作[gitbub网址](https://github.com/)
 
 知易行难，say easy than do， 下面就来一个小小的实例，**必须要有git账号**，这个步骤就不用say了吧！
 
-###创建远程库 
+### 创建远程库 
 
      a. 点击+号下的New repository 创建一个远程库，命名为GitOperate,
 
@@ -137,7 +137,7 @@
         https://github.com/FreeSunny/GitOperate.git。
         之后跳转到README.md,该文件主要是对项目的描述。
 
-###远程库克隆到本地
+### 远程库克隆到本地
 
      a. 本地创建一个GitOperate文件夹
 
@@ -149,7 +149,7 @@
      d. 将第二个目录下的所有文件全部复制到上一层目录中，这样就只有第一层目录添加到版本控制中。
         操作命令为(cp -r GitOperate/ .)
 
-###提交代码
+### 提交代码
 
     git add .// 将提交的代码添加进来，这里指README.md
 
@@ -158,3 +158,12 @@
     git push origin master //  同步到远程库
 
 [1]: https://github.com/git-for-windows/git/releases/tag/v2.6.3.windows.1
+
+### 本地已经有文件夹
+    
+    cd existing_folder //进入已有文件夹
+    git init // 初始化
+    git remote add origin  https://github.com/FreeSunny/GitOperate.git //关联远程库
+    git add .
+    git commit -m "Initial commit"
+    git push -u origin master
